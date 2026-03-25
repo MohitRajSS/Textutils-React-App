@@ -101,6 +101,40 @@ export default function About() {
                     </div>
                 </div>
 
+                {/* Item 4 */}
+                <div className="accordion-item" style={myStyle}>
+                    <h2 className="accordion-header">
+                        <button 
+                            className="accordion-button collapsed"
+                            style={{
+                                backgroundColor: myStyle.backgroundColor,
+                                color: myStyle.color
+                            }}
+                            type="button" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#collapseFour"
+                        >
+                            Text Utility Features
+                        </button>
+                    </h2>
+                    <div 
+                        id="collapseFour" 
+                        className="accordion-collapse collapse"
+                        data-bs-parent="#accordionExample"
+                    >
+                        <div className="accordion-body" style={myStyle}>
+                            <ul>
+                                <li><b>Uppercase:</b> Converts all text into capital letters.</li>
+                                <li><b>Lowercase:</b> Converts all text into small letters.</li>
+                                <li><b>Copy:</b> Copies the current text to clipboard.</li>
+                                <li><b>Rectify Text:</b> Removes extra spaces and capitalizes sentences after full stops.</li>
+                                <li><b>Sentence Case:</b> Capitalizes first letter of each sentence (. ! ? supported).</li>
+                                <li><b>Remove Punctuation:</b> Removes symbols like ., !, ?, etc.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             {/* Toggle Button */}
